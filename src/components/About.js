@@ -9,6 +9,11 @@ const About = () => {
       <div className="about-content">
         <div className="about-profile">
           <img src={ProfileImage} alt="Rayana Sales" className="about-photo" />
+          {/* <div className="about-below-photo">
+            <p>True strength knows no gender.</p>
+            <p>Together we make extraordinary impact.</p>
+            <p>Recife, Brazil</p>
+          </div> */}
         </div>
         <div className="about-info">
           <h2>Full-Stack Software Developer (Focused in Front-End)</h2>
@@ -23,11 +28,16 @@ const About = () => {
           </p>
           <h3>Education</h3>
           <p>
-            Systems Analysis and Development <br /> Instituto Federal de Pernambuco <br />
+            Systems Analysis and Development <br /> Instituto Federal de
+            Pernambuco <br />
             2014 - 2017
           </p>
           <h3>Languages</h3>
-          <p>English: Full professional proficiency<br />Portuguese: Native</p>
+          <p>
+            English: Full professional proficiency
+            <br />
+            Portuguese: Native
+          </p>
           <h3>What am I looking for going forward?</h3>
           <p>
             I’m looking to engage in multicultural environments as I want to

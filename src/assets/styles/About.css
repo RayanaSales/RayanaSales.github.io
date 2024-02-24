@@ -24,6 +24,7 @@
 .about-profile {
   flex: 0 0 150px;
   margin-right: 20px;
+  position: relative;
 }
 
 .about-photo {
@@ -35,6 +36,20 @@
     radial-gradient(circle at top left, #ff79c6, #bd93f9, #8be9fd);
   background-origin: border-box;
   background-clip: content-box, border-box;
+}
+
+.about-below-photo {
+  margin-top: 20px;
+}
+
+.about-below-photo p {
+  color: #f8f8f2;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.about-clock {
+  font-weight: bold;
 }
 
 .about-info {
@@ -53,4 +68,14 @@
   line-height: 1.6;
   margin-top: 10px;
   margin-bottom: 20px;
+}
+
+.about-below-photo p {
+  color: #f8f8f2;
+  margin: 5px 0;
+}
+
+.about-below-photo a {
+  color: #8be9fd;
+  text-decoration: none;
 }
