@@ -8,7 +8,7 @@ function Header() {
     <header className="header">
       <div className="header-container">
         <div className="logo">
-          Rayana Sales' <span className="rainbow-text">Portfolio</span>
+          Rayana Sales' <span className="rainbow-text"> Portfolio</span>
         </div>
         <nav className="nav-links">
           <a href="/about">About</a>
