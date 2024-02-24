@@ -1,0 +1,14 @@
+/* Global.css */
+.gradient-text,
+.rainbow-text {
+  background: linear-gradient(to right, #ff79c6, #bd93f9, #8be9fd);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.rainbow-bg {
+  background: linear-gradient(to right, #ff79c6, #bd93f9, #8be9fd);
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+}

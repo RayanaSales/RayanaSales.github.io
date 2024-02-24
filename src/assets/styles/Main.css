@@ -1,0 +1,43 @@
+/* Main.css */
+.main {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  padding: 2rem;
+  background-color: #000;
+}
+
+.content h1 {
+  font-size: 3rem;
+}
+
+.content p {
+  font-size: 1.25rem;
+  margin: 1rem 0;
+}
+
+.actions {
+  margin-top: 2rem;
+}
+
+.btn-primary {
+  background-color: #8be9fd;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+}
+
+.feature-image img {
+  max-width: 100px;
+  height: auto;
+}

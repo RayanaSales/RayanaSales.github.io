@@ -1,0 +1,53 @@
+/* Header.css */
+.header {
+  background-color: #000;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* This ensures vertical alignment of all children */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+  display: flex; /* Added display flex */
+  align-items: center; /* Align text vertically */
+  flex-shrink: 0;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Added align-items center */
+  flex-grow: 1;
+  margin: 0 2rem;
+  height: 25px;
+}
+
+.nav-links a {
+  margin: 0 1rem;
+  color: #fff;
+  text-decoration: none;
+  display: flex; /* Added display flex */
+  align-items: center; /* Align text vertically */
+}
+
+.user-actions {
+  display: flex;
+  align-items: center; /* Align user-actions vertically */
+  flex-shrink: 0;
+}
+
+.user-actions .get-started {
+  color: #000;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+}
