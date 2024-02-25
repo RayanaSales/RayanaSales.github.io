@@ -22,7 +22,7 @@
 }
 
 .about-profile {
-  flex: 0 0 150px;
+  flex: 0 0 230px;
   margin-right: 20px;
   position: relative;
 }
@@ -40,16 +40,14 @@
 
 .about-below-photo {
   margin-top: 20px;
+  text-align: center; /* Centraliza os texto do profile com a foto */
+  min-height: 245px;
 }
 
 .about-below-photo p {
   color: #f8f8f2;
-  line-height: 1.4;
-  margin-bottom: 10px;
-}
-
-.about-clock {
-  font-weight: bold;
+  line-height: 1.7;
+  margin: 10px 0px;
 }
 
 .about-info {
@@ -70,12 +68,40 @@
   margin-bottom: 20px;
 }
 
-.about-below-photo p {
-  color: #f8f8f2;
-  margin: 5px 0;
-}
-
 .about-below-photo a {
   color: #8be9fd;
   text-decoration: none;
+}
+
+/* copied from resend */
+.rainbowBorderWrapper {
+  display: inline-flex; /* Utiliza flexbox para centralização */
+  border-radius: 9999px; /* Arredondamento da borda */
+  background: linear-gradient(90deg, #ff79c6, #bd93f9, #8be9fd); /* Gradiente */
+  padding: 1px; /* Espaço para o gradiente aparecer como borda */
+  line-height: 0; /* Corrige o alinhamento da linha */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  max-width: 50%;
+  margin-right: 5px;
+}
+
+.profile-web-link {
+  display: flex; /* Habilita flexbox para os itens internos */
+  align-items: center; /* Centraliza verticalmente os itens internos */
+  justify-content: center; /* Centraliza horizontalmente os itens internos */
+  min-width: 50px; /* Largura mínima conforme solicitado */
+  padding: 10px 20px; /* Espaçamento interno */
+  font-size: 14px; /* Tamanho do texto */
+  background: #282a36; /* Cor de fundo do link */
+  color: white; /* Cor do texto, assumindo que seja branca para contrastar */
+  text-decoration: none; /* Remove o sublinhado do link */
+  border-radius: 9999px; /* Arredondamento da borda */
+  margin: 0; /* Remove qualquer margem padrão */
+  transition: all 0.3s; /* Suaviza a transição de efeitos */
+}
+
+.profile-web-link:hover {
+  transform: translateY(-0.5px); /* Efeito de leve elevação ao passar o mouse */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para efeito de elevação */
 }

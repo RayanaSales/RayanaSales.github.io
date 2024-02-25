@@ -1,7 +1,9 @@
 // About.js
 import React from "react";
 import "../assets/styles/About.css";
+import "../assets/styles/Global.css";
 import ProfileImage from "../assets/images/Rayana_Sales_PIC.jpeg";
+import ButtonWithGradientBorder from "./ButtonWithGradientBorder";
 
 const About = () => {
   return (
@@ -9,27 +11,32 @@ const About = () => {
       <div className="about-content">
         <div className="about-profile">
           <img src={ProfileImage} alt="Rayana Sales" className="about-photo" />
-          {/* <div className="about-below-photo">
-            <p>True strength knows no gender.</p>
-            <p>Together we make extraordinary impact.</p>
-            <p>Recife, Brazil</p>
-          </div> */}
+          <div className="about-below-photo">
+            <h2 className="rainbow-text">RAYANA SALES</h2>
+            <p>Full-Stack Software Developer</p>
+            <p>Focused in Front-End</p>
+            <ButtonWithGradientBorder
+              link={"https://www.linkedin.com/in/rayana-sales/"}
+              text={"LinkedIn"}
+            />
+            <ButtonWithGradientBorder
+              link={"https://github.com/RayanaSales"}
+              text={"GitHub"}
+            />
+          </div>
         </div>
         <div className="about-info">
-          <h2>Full-Stack Software Developer (Focused in Front-End)</h2>
+          <h2>About Me</h2>
           <p>
             Hello, World! 👋🌍 I'm Rayana Sales, a passionate software developer
             and tech enthusiast. With over 8 years of experience in the field,
             I've had the opportunity to work on various exciting projects and
-            explore different technologies. I currently work as a Senior
-            Software Developer at ThoughtWorks, where I was able to develop my
-            skills related to quality, software security, soft skills, and sense
-            of leadership.
+            explore different technologies.
           </p>
           <h3>Education</h3>
           <p>
-            Systems Analysis and Development <br /> Instituto Federal de
-            Pernambuco <br />
+            I hold a degree in Systems Analysis and Development <br />
+            Provided by Instituto Federal de Pernambuco <br />
             2014 - 2017
           </p>
           <h3>Languages</h3>
