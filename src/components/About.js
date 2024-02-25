@@ -29,21 +29,18 @@ const About = () => {
           <h2>About</h2>
           <p>
             Hello, World! 👋🌍 I'm Rayana Sales, a passionate software developer
-            and tech enthusiast. With over 8 years of experience in the field,
-            I've had the opportunity to work on various exciting projects and
-            explore different technologies.
+            and tech enthusiast, based in Brazil 🇧🇷🌴🥥 With over 8 years of experience in the field,
+            I've had the opportunity to work on various exciting projects around the world, managing 
+            different time zones while exploring different technologies. I was able to develop my 
+            skills related to code quality, software security and sense of leadership.
           </p>
           <h2>Education</h2>
           <p>
-            I hold a degree in Systems Analysis and Development <br />
-            Provided by Instituto Federal de Pernambuco <br />
-            2014 - 2017
+            I hold a degree in Systems Analysis and Development, provided by Instituto Federal de Pernambuco.
           </p>
           <h2>Languages</h2>
           <p>
-            English: Full professional proficiency
-            <br />
-            Portuguese: Native
+            English: Full professional proficiency, Portuguese: Native.
           </p>
           <h2>What am I looking for going forward?</h2>
           <p>

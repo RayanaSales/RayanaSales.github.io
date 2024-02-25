@@ -51,6 +51,10 @@
   margin: 10px 0px;
 }
 
+.about-info p {
+  margin-bottom: 30px;
+}
+
 .about-info {
   flex: 1;
 }
@@ -60,6 +64,7 @@
   background: linear-gradient(45deg, #ff79c6, #bd93f9, #8be9fd);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-transform: uppercase; /* Transforma o texto em maiúsculas */
 }
 
 /* Responsividade para dispositivos móveis menores */
