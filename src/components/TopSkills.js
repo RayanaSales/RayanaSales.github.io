@@ -1,28 +1,40 @@
-// TopSkills.js // <h2>Top skills and years of usage</h2>
+// TopSkills.js
 import React from "react";
 import "../assets/styles/TopSkills.css";
+import ReactIcon from "../assets/images/ReactIcon";
+import ReduxIcon from "../assets/images/ReduxIcon";
+import TddIcon from "../assets/images/TddIcon";
+import JestIcon from "../assets/images/JestIcon";
+import MicrosoftIcon from "../assets/images/MicrosoftIcon";
+import CypressIcon from "../assets/images/CypressIcon";
+import CiCdIcon from "../assets/images/CiCdIcon";
+import TSIcon from "../assets/images/TSIcon";
+import VueIcon from "../assets/images/VueIcon";
 
 const skills = {
-  Node: {
-    years: "5 years",
-    svgPath:
-      "M18.6667 5.618L10 1.26 1.33333 5.618v9.86l1.50933.88 3.08533-1.248A2.25 2.25 0 007.5 13.728V6h1.5v7.728a3.75 3.75 0 01-2.3435 3.476l-2.01033.813L10 21.87l9.75-5.688V5.618zM10.5 9a3 3 0 013-3h1.7505C16.7685 6 18 7.23 18 8.75V9h-1.5v-.25A1.25 1.25 0 0015.2505 7.5H13.5a1.5 1.5 0 000 3h1.5a3 3 0 110 6H13.5a3 3 0 01-3-3h1.5a1.5 1.5 0 001.5 1.5h1.5a1.5 1.5 0 100-3H13.5a3 3 0 01-3-3z",
-  },
-  // Adicione outros skills conforme necessário
+  React: { years: "5 years", IconComponent: ReactIcon },
+  Redux: { years: "5 years", IconComponent: ReduxIcon },
+  TDD: { years: "4 years", IconComponent: TddIcon },
+  Jest: { years: "4 years", IconComponent: JestIcon },
+  "C#": { years: "4 years", IconComponent: MicrosoftIcon },
+  "Asp.Net": { years: "4 years", IconComponent: MicrosoftIcon },
+  Cypress: { years: "3 years", IconComponent: CypressIcon },
+  "CI/CD": { years: "3 years", IconComponent: CiCdIcon },
+  TypeScript: { years: "3 years", IconComponent: TSIcon },
+  "Node.js": { years: "5 years", IconComponent: ReactIcon },
+  "Angular.js": { years: "3 years", IconComponent: ReactIcon },
+  Jquery: { years: "3 years", IconComponent: ReactIcon },
+  "Next.js": { years: "3 years", IconComponent: ReactIcon },
+  "Nest.js": { years: "1 years", IconComponent: ReactIcon },
+  "Vue.js": { years: "1 years", IconComponent: VueIcon },
+  GraphQL: { years: "1 years", IconComponent: ReactIcon },
+  REST: { years: "7 years", IconComponent: ReactIcon },
 };
 
-const SkillButton = ({ skill, years, svgPath }) => (
+const SkillButton = ({ skill, years, IconComponent }) => (
   <button className="skill-button" type="button">
     <div className="icon-container">
-      <svg
-        fill="#8be9fd"
-        height="32"
-        width="32"
-        viewBox="0 0 32 32"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path d={svgPath} fill="currentColor" />
-      </svg>
+      <IconComponent color="#8be9fd" /> {/* Passando a cor como prop */}
     </div>
     <span className="skill-name">{skill}</span>
     <span className="skill-years">{years}</span>
@@ -33,12 +45,12 @@ const TopSkills = () => (
   <div className="skills-container">
     <h2>Top skills and years of usage</h2>
     <div className="buttons-container">
-      {Object.entries(skills).map(([skill, { years, svgPath }]) => (
+      {Object.entries(skills).map(([skill, { years, IconComponent }]) => (
         <SkillButton
           key={skill}
           skill={skill}
           years={years}
-          svgPath={svgPath}
+          IconComponent={IconComponent} // Passando o componente como prop
         />
       ))}
     </div>

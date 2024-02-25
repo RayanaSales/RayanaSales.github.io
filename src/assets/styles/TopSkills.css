@@ -2,10 +2,10 @@
 .skills-container {
   color: #fff;
   padding: 20px;
-  max-width: 100%;
   margin: 20px auto;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   text-align: center;
+  max-width: 70%;
 }
 
 .skills-container h2 {
@@ -35,9 +35,13 @@
   padding: 10px;
   transition: color 0.3s ease;
   text-align: center;
+  min-width: 110px;
+  height: 110px;
+  margin: 15px;
 }
 
-.skill-button:hover, .skill-button:focus {
+.skill-button:hover,
+.skill-button:focus {
   color: #8be9fd;
 }
 
@@ -53,6 +57,7 @@
   font-size: 1rem;
   font-weight: bold;
   color: #fff;
+  margin: 5px 0;
 }
 
 .skill-years {
