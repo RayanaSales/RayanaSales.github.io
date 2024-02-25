@@ -3,6 +3,7 @@
   color: #f8f8f2;
   font-family: "Open Sans", sans-serif;
   margin: 20px;
+  margin-top: 50px;
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
@@ -69,6 +70,11 @@
 
 /* Responsividade para dispositivos móveis menores */
 @media (max-width: 767px) {
+  .about-container {
+    margin: unset;
+    margin-top: 10px;
+  }
+
   .about-content {
     flex-direction: column;
   }
