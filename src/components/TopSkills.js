@@ -33,9 +33,9 @@ const skills = {
 
 const SkillButton = ({ skill, years, IconComponent }) => (
   <button className="skill-button" type="button">
-    <div className="icon-container">
-      <IconComponent color="#8be9fd" /> {/* Passando a cor como prop */}
-    </div>
+    {/* <div className="icon-container">
+      <IconComponent color="#8be9fd" /> 
+    </div> */}
     <span className="skill-name">{skill}</span>
     <span className="skill-years">{years}</span>
   </button>

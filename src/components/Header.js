@@ -17,8 +17,8 @@ function Header() {
         <nav className="nav-links">
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
-          {/* <a href="#experience">Experience</a>
-          <a href="#volunteering">Volunteering</a> */}
+          <a href="#experience">Experience</a>
+          <a href="#volunteering">Volunteering</a>
         </nav>
         <div className="user-actions">
           <a
