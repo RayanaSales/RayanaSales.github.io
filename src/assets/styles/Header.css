@@ -8,7 +8,7 @@
 .header-container {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* This ensures vertical alignment of all children */
+  align-items: center;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -17,15 +17,15 @@
   font-size: 25px;
   color: #fff;
   text-decoration: none;
-  display: flex; /* Added display flex */
-  align-items: center; /* Align text vertically */
+  display: flex;
+  align-items: center;
   flex-shrink: 0;
 }
 
 .nav-links {
   display: flex;
   justify-content: center;
-  align-items: center; /* Added align-items center */
+  align-items: center;
   flex-grow: 1;
   margin: 0 2rem;
   height: 25px;
@@ -35,13 +35,13 @@
   margin: 0 1rem;
   color: #fff;
   text-decoration: none;
-  display: flex; /* Added display flex */
-  align-items: center; /* Align text vertically */
+  display: flex;
+  align-items: center;
 }
 
 .user-actions {
   display: flex;
-  align-items: center; /* Align user-actions vertically */
+  align-items: center;
   flex-shrink: 0;
 }
 
@@ -50,4 +50,35 @@
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
   text-decoration: none;
+}
+
+/* Responsividade para dispositivos móveis menores */
+@media (max-width: 767px) {
+  .header-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .nav-links {
+    margin: 1rem 0;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .nav-links a {
+    margin: 0.5rem 0;
+  }
+
+  .user-actions {
+    flex-direction: column;
+  }
+
+  .user-actions .get-started {
+    margin-top: 1rem;
+  }
+}
+
+/* Responsividade para dispositivos entre 768px e 1024px (incluindo iPad Mini em modo retrato) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Ajustes para tablets, mantendo layout de desktop */
 }

@@ -40,11 +40,12 @@
 
 .about-below-photo {
   margin-top: 20px;
-  text-align: center; /* Centraliza os texto do profile com a foto */
+  text-align: center;
   min-height: 245px;
 }
 
-.about-below-photo p {
+.about-below-photo p,
+.about-info p {
   color: #f8f8f2;
   line-height: 1.7;
   margin: 10px 0px;
@@ -61,47 +62,42 @@
   -webkit-text-fill-color: transparent;
 }
 
-.about-info p {
-  color: #f8f8f2;
-  line-height: 1.6;
-  margin-top: 10px;
-  margin-bottom: 20px;
+/* Responsividade para dispositivos móveis menores */
+@media (max-width: 767px) {
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-profile {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .about-below-photo {
+    min-height: unset;
+  }
+
+  .about-below-photo,
+  .about-info {
+    text-align: center;
+  }
+
+  .about-info h2 {
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    margin-top: 30px;
+  }
+
+  .about-info p {
+    text-align: justify;
+  }
 }
 
-.about-below-photo a {
-  color: #8be9fd;
-  text-decoration: none;
+/* Responsividade para dispositivos entre 768px e 1024px (incluindo iPad Mini em modo retrato) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Ajustes para tablets sem alterações significativas no layout de desktop */
 }
 
-/* copied from resend */
-.rainbowBorderWrapper {
-  display: inline-flex; /* Utiliza flexbox para centralização */
-  border-radius: 9999px; /* Arredondamento da borda */
-  background: linear-gradient(90deg, #ff79c6, #bd93f9, #8be9fd); /* Gradiente */
-  padding: 1px; /* Espaço para o gradiente aparecer como borda */
-  line-height: 0; /* Corrige o alinhamento da linha */
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente */
-  max-width: 50%;
-  margin-right: 5px;
-}
-
-.profile-web-link {
-  display: flex; /* Habilita flexbox para os itens internos */
-  align-items: center; /* Centraliza verticalmente os itens internos */
-  justify-content: center; /* Centraliza horizontalmente os itens internos */
-  min-width: 50px; /* Largura mínima conforme solicitado */
-  padding: 10px 20px; /* Espaçamento interno */
-  font-size: 14px; /* Tamanho do texto */
-  background: #282a36; /* Cor de fundo do link */
-  color: white; /* Cor do texto, assumindo que seja branca para contrastar */
-  text-decoration: none; /* Remove o sublinhado do link */
-  border-radius: 9999px; /* Arredondamento da borda */
-  margin: 0; /* Remove qualquer margem padrão */
-  transition: all 0.3s; /* Suaviza a transição de efeitos */
-}
-
-.profile-web-link:hover {
-  transform: translateY(-0.5px); /* Efeito de leve elevação ao passar o mouse */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para efeito de elevação */
+/* Responsividade para dispositivos acima de 1024px (desktops e laptops) */
+@media (min-width: 1025px) {
+  /* Ajustes específicos para desktops, se necessário */
 }

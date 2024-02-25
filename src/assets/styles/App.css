@@ -7,8 +7,18 @@
   background-color: #000;
 }
 
-/* This ensures that the footer (if there is one) sticks to the bottom of the page */
-/* If a footer is added later */
 .footer {
   margin-top: auto;
+}
+
+/* Responsividade para dispositivos móveis menores */
+@media (max-width: 767px) {
+  /* Ajustes para smartphones aqui */
+  .App {
+    flex-direction: column;
+  }
+
+  .footer {
+    padding: 20px;
+  }
 }

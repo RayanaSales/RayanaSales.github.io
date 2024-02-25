@@ -1,0 +1,55 @@
+/* ButtonWithGradientBorder.css */
+.rainbowBorderWrapper {
+  display: inline-flex;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, #ff79c6, #bd93f9, #8be9fd);
+  padding: 1px;
+  line-height: 0;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+  margin-right: 5px;
+}
+
+.profile-web-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 50px;
+  padding: 10px 20px;
+  font-size: 14px;
+  background: #282a36;
+  color: white;
+  text-decoration: none;
+  border-radius: 9999px;
+  margin: 0;
+  transition: all 0.3s;
+}
+
+.profile-web-link:hover {
+  transform: translateY(-0.5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividade para dispositivos móveis menores */
+@media (max-width: 767px) {
+  .rainbowBorderWrapper {
+    margin-left: 10px; /* Centraliza os botões em dispositivos móveis */
+    max-width: 100%; /* Permite que os botões usem toda a largura disponível */
+  }
+
+  .profile-web-link {
+    padding: 8px 16px; /* Ajusta o preenchimento para telas menores */
+    font-size: 12px; /* Reduz o tamanho da fonte para telas menores */
+  }
+}
+
+/* Responsividade para dispositivos entre 768px e 1024px (incluindo iPad Mini em modo retrato) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Ajustes para tablets sem alterações significativas no layout de desktop */
+}
+
+/* Responsividade para dispositivos acima de 1024px (desktops e laptops) */
+@media (min-width: 1025px) {
+  /* Ajustes específicos para desktops, se necessário */
+}

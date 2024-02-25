@@ -1,6 +1,8 @@
+// ButtonWithGradientBorder.js
 import React from 'react';
 import "../assets/styles/About.css";
 import "../assets/styles/Global.css";
+import "../assets/styles/ButtonWithGradientBorder.css";
 
 const ButtonWithGradientBorder = ({ link, text }) => {
   return (
