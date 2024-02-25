@@ -1,4 +1,9 @@
 /* TopSkills.css */
+h2,
+h3 {
+  text-transform: uppercase; /* Transforma o texto em maiúsculas */
+}
+
 .skills-container {
   color: #fff;
   padding: 20px;
@@ -64,4 +69,28 @@
   font-size: 0.875rem;
   font-style: italic;
   color: #fff;
+}
+
+/* Ajustes específicos para dispositivos móveis */
+@media (max-width: 767px) {
+  .skills-container {
+    width: 100%;
+    margin: unset;
+    max-width: unset;
+  }
+
+  .skills-container h2 {
+    font-size: 3rem; /* Tamanho de fonte reduzido apenas para dispositivos móveis */
+  }
+
+  .buttons-container {
+    justify-content: center; /* Centraliza os botões no container */
+  }
+
+  .skill-button {
+    flex: 0 1 calc(40% - 20px); /* Dois botões lado a lado com ajuste de margem */
+    margin: 10px; /* Espaçamento uniforme ao redor dos botões */
+    height: auto; /* Altura automática para ajustar o conteúdo */
+    padding: 20px; /* Preenchimento aumentado para um melhor toque alvo */
+  }
 }
