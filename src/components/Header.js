@@ -2,13 +2,17 @@
 import React from "react";
 import "../assets/styles/Header.css";
 import "../assets/styles/Global.css";
+import cv from "../assets/documents/Rayana_Sales_CV.pdf";
 
 function Header() {
   return (
     <header className="header">
       <div className="header-container">
         <div className="logo">
-          Rayana Sales' <span className="rainbow-text"> Portfolio</span>
+          Rayana Sales'
+          <span className="rainbow-text" style={{ marginLeft: "5px" }}>
+            Portfolio
+          </span>
         </div>
         <nav className="nav-links">
           <a href="/about">About</a>
@@ -32,11 +36,7 @@ function Header() {
           </a>
         </nav>
         <div className="user-actions">
-          <a
-            href="../assets/documents/Rayana_Sales_CV.pdf"
-            className="get-started rainbow-bg"
-            download
-          >
+          <a href={cv} className="get-started rainbow-bg" download="Rayana_Sales_CV.pdf">
             DOWNLOAD CV
           </a>
         </div>

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ac41c74b.css",
+    "main.js": "/static/js/main.d298a052.js",
+    "static/media/Rayana_Sales_PIC.jpeg": "/static/media/Rayana_Sales_PIC.036a37999c2e709aaee8.jpeg",
+    "index.html": "/index.html",
+    "main.ac41c74b.css.map": "/static/css/main.ac41c74b.css.map",
+    "main.d298a052.js.map": "/static/js/main.d298a052.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ac41c74b.css",
+    "static/js/main.d298a052.js"
+  ]
+}
