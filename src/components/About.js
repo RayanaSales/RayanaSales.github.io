@@ -7,7 +7,7 @@ import ButtonWithGradientBorder from "./ButtonWithGradientBorder";
 
 const About = () => {
   return (
-    <div className="about-container">
+    <div id="about" className="about-container">
       <div className="about-content">
         <div className="about-profile">
           <img src={ProfileImage} alt="Rayana Sales" className="about-photo" />

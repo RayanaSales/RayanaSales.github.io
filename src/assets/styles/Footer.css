@@ -1,0 +1,39 @@
+.footer {
+  background-color: #282a36; /* Cor de fundo */
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 16px;
+}
+
+.name {
+  background: -webkit-linear-gradient(
+    45deg,
+    #ff79c6,
+    #bd93f9,
+    #8be9fd
+  ); /* Gradiente */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Torna o texto transparente */
+  display: inline;
+}
+
+/* Media query para dispositivos móveis com largura até 768px */
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px 10px; /* Reduz o padding para dispositivos móveis */
+    font-size: 14px; /* Ajusta o tamanho da fonte para melhor leitura em telas menores */
+  }
+
+  .footer-text {
+    margin: 0 20px; /* Adiciona margem para não colar o texto nas bordas da tela */
+    text-align: center; /* Garante que o texto fique centralizado */
+  }
+
+  .name {
+    font-size: 14px; /* Opcional: Ajustar o tamanho da fonte do nome, se necessário */
+  }
+}
+
+/* Considere adicionar media queries específicas para outros pontos de quebra, se necessário */

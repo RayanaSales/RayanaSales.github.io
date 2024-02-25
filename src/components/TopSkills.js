@@ -42,7 +42,7 @@ const SkillButton = ({ skill, years, IconComponent }) => (
 );
 
 const TopSkills = () => (
-  <div className="skills-container">
+  <div id="skills" className="skills-container">
     <h2>Top skills and years of usage</h2>
     <div className="buttons-container">
       {Object.entries(skills).map(([skill, { years, IconComponent }]) => (
