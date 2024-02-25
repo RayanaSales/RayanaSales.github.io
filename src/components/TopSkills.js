@@ -28,7 +28,7 @@ const skills = {
   "Nest.js": { years: "1 years", IconComponent: ReactIcon },
   "Vue.js": { years: "1 years", IconComponent: VueIcon },
   GraphQL: { years: "1 years", IconComponent: ReactIcon },
-  REST: { years: "7 years", IconComponent: ReactIcon },
+  Rest: { years: "7 years", IconComponent: ReactIcon },
 };
 
 const SkillButton = ({ skill, years, IconComponent }) => (
