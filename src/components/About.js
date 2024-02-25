@@ -29,7 +29,7 @@ const About = () => {
           <h2>About</h2>
           <p>
             Hello, World! 👋🌍 I'm Rayana Sales, a passionate software developer
-            and tech enthusiast, based in Brazil 🇧🇷🌴🥥 With over 8 years of experience in the field,
+            and tech enthusiast, based in Brazil. With over 8 years of experience in the field,
             I've had the opportunity to work on various exciting projects around the world, managing 
             different time zones while exploring different technologies. I was able to develop my 
             skills related to code quality, software security and sense of leadership.
