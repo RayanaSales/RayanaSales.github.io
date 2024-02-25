@@ -12,7 +12,7 @@ const About = () => {
         <div className="about-profile">
           <img src={ProfileImage} alt="Rayana Sales" className="about-photo" />
           <div className="about-below-photo">
-            <h2 className="rainbow-text">RAYANA SALES</h2>
+            <h1 className="rainbow-text">RAYANA SALES</h1>
             <p>Full-Stack Software Developer</p>
             <p>Focused in Front-End</p>
             <ButtonWithGradientBorder
@@ -26,26 +26,26 @@ const About = () => {
           </div>
         </div>
         <div className="about-info">
-          <h2>About Me</h2>
+          <h2>About</h2>
           <p>
             Hello, World! 👋🌍 I'm Rayana Sales, a passionate software developer
             and tech enthusiast. With over 8 years of experience in the field,
             I've had the opportunity to work on various exciting projects and
             explore different technologies.
           </p>
-          <h3>Education</h3>
+          <h2>Education</h2>
           <p>
             I hold a degree in Systems Analysis and Development <br />
             Provided by Instituto Federal de Pernambuco <br />
             2014 - 2017
           </p>
-          <h3>Languages</h3>
+          <h2>Languages</h2>
           <p>
             English: Full professional proficiency
             <br />
             Portuguese: Native
           </p>
-          <h3>What am I looking for going forward?</h3>
+          <h2>What am I looking for going forward?</h2>
           <p>
             I’m looking to engage in multicultural environments as I want to
             continue facing challenges related to management and coordination in
