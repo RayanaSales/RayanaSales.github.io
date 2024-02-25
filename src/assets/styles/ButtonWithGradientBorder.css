@@ -9,6 +9,7 @@
   align-items: center;
   max-width: 50%;
   margin-right: 5px;
+  margin-top: 5px;
 }
 
 .profile-web-link {
@@ -36,6 +37,7 @@
   .rainbowBorderWrapper {
     margin-left: 10px; /* Centraliza os botões em dispositivos móveis */
     max-width: 100%; /* Permite que os botões usem toda a largura disponível */
+    margin-top: 5px;
   }
 
   .profile-web-link {

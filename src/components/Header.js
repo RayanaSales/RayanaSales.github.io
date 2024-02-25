@@ -17,8 +17,20 @@ function Header() {
         <nav className="nav-links">
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
-          {/* <a href="#experience">Experience</a>
-          <a href="#volunteering">Volunteering</a> */}
+          <a
+            href="https://github.com/RayanaSales"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/rayana-sales/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            LinkedIn
+          </a>
         </nav>
         <div className="user-actions">
           <a
