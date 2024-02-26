@@ -25,7 +25,7 @@ function Experiences() {
   return (
     <div id="experiences" className="experiences">
       <h2>Experiences through the years</h2>
-      <p>Together we made extraordinary impact</p>
+      <p>Together we make extraordinary impact</p>
       <div className="experiences-content">
         {experiences.map((exp, index) => (
           <div
