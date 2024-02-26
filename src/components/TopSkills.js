@@ -3,7 +3,6 @@ import React from "react";
 import "../assets/styles/TopSkills.css";
 import ReactIcon from "../assets/images/ReactIcon";
 import ReduxIcon from "../assets/images/ReduxIcon";
-import TddIcon from "../assets/images/TddIcon";
 import JestIcon from "../assets/images/JestIcon";
 import MicrosoftIcon from "../assets/images/MicrosoftIcon";
 import CypressIcon from "../assets/images/CypressIcon";
@@ -14,7 +13,6 @@ import VueIcon from "../assets/images/VueIcon";
 const skills = {
   React: { years: "5 years", IconComponent: ReactIcon },
   Redux: { years: "5 years", IconComponent: ReduxIcon },
-  TDD: { years: "4 years", IconComponent: TddIcon },
   Jest: { years: "4 years", IconComponent: JestIcon },
   "C#": { years: "4 years", IconComponent: MicrosoftIcon },
   "Asp.Net": { years: "4 years", IconComponent: MicrosoftIcon },

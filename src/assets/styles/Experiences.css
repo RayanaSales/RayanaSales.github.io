@@ -1,0 +1,110 @@
+/* Experiences.css */
+.experiences {
+  margin-top: 55px;
+  margin-bottom: 55px;
+}
+
+.experiences-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+  max-width: 90%;
+  margin: auto;
+}
+
+.experience {
+  background-color: #282a36;
+  padding: 3px; /* Espaço para a borda gradiente */
+  border-radius: 15px;
+  margin-bottom: 20px; /* Espaço entre os itens da experiência */
+  max-width: 90%;
+}
+
+.experience-inner {
+  background: #282a36;
+  border-radius: 12px; /* Um pouco menos que o border-radius do .experience para o efeito de borda */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza o conteúdo */
+  width: 100%;
+  height: 100%;
+}
+
+.experiences h2,
+h3 {
+  text-transform: uppercase;
+  background: linear-gradient(45deg, #ff79c6, #bd93f9, #8be9fd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.experiences h2 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.experiences h3 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.experiences h4 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.experiences p {
+  -webkit-font-smoothing: antialiased;
+  font-family: "Open Sans", sans-serif;
+  text-align: justify;
+  color: white;
+  line-height: 1.7;
+  margin: 10px 0px;
+  text-align: center;
+}
+
+.experiences .rainbowBorderWrapper {
+  max-width: unset;
+}
+
+.experiences-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+  max-width: 90%;
+  margin: auto;
+  gap: 20px; /* Adiciona espaço entre os itens da grid */
+}
+
+/* Responsividade para tablets */
+@media (max-width: 768px) {
+  .experiences-content {
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas para tablets */
+  }
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 480px) {
+  .experiences-content {
+    grid-template-columns: 1fr; /* 1 coluna para celulares */
+  }
+
+  .experiences h2 {
+    font-size: 3rem;
+  }
+
+  .experiences h3, .experiences h4 {
+    font-size: 1.5rem; /* Tamanho de fonte menor para sub-títulos em telas pequenas */
+  }
+
+  .experience {
+    max-width: unset;
+  }
+
+  .experiences {
+    margin-top: unset;
+  }
+}
