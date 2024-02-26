@@ -1,7 +1,7 @@
 /* TopSkills.css */
 h2,
 h3 {
-  text-transform: uppercase; /* Transforma o texto em maiúsculas */
+  text-transform: uppercase;
 }
 
 .skills-container {
@@ -22,57 +22,41 @@ h3 {
   -webkit-text-fill-color: transparent;
 }
 
-.buttons-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-}
-
-.skill-button {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-  background-color: #282a36;
-  border: 2px solid #1a1c24;
+.skills-table-container {
   border-radius: 15px;
-  cursor: pointer;
+  overflow: hidden; /* Ensures child elements adhere to the container's border radius */
+  padding: 3px; /* Matching the border thickness from Experiences */
+  background-image: linear-gradient(135deg, #ff79c6, #bd93f9, #8be9fd);
+}
+
+.skills-table-content {
+  background: #282a36;
+  border-radius: 12px; /* Match the inner radius from Experiences for consistency */
+  overflow: hidden; /* Ensures the table adheres to the rounded corners */
+}
+
+.skills-table {
+  width: 100%;
+  background-color: transparent; /* Make the table background transparent */
+  border-collapse: collapse;
+  position: relative;
+}
+
+.skills-table th,
+.skills-table td {
   padding: 10px;
-  transition: color 0.3s ease;
-  text-align: center;
-  min-width: 110px;
-  height: 80px;
-  margin: 15px;
+  border: 3px solid #343746; /* Adjusted border thickness to match Experiences */
 }
 
-.skill-button:hover,
-.skill-button:focus {
-  color: #8be9fd;
+.skills-table th {
+  background-color: #343746;
+  color: #ffffff;
 }
 
-.icon-container {
-  height: 32px;
-  width: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.skills-table td {
+  color: #f8f8f2;
 }
 
-.skill-name {
-  font-size: 1rem;
-  font-weight: bold;
-  color: #fff;
-  margin: 5px 0;
-}
-
-.skill-years {
-  font-size: 0.875rem;
-  font-style: italic;
-  color: #fff;
-}
-
-/* Ajustes específicos para dispositivos móveis */
 @media (max-width: 767px) {
   .skills-container {
     width: 100%;
@@ -82,17 +66,11 @@ h3 {
   }
 
   .skills-container h2 {
-    font-size: 3rem; /* Tamanho de fonte reduzido apenas para dispositivos móveis */
+    font-size: 3rem;
   }
 
-  .buttons-container {
-    justify-content: center; /* Centraliza os botões no container */
-  }
-
-  .skill-button {
-    flex: 0 1 calc(40% - 20px); /* Dois botões lado a lado com ajuste de margem */
-    margin: 10px; /* Espaçamento uniforme ao redor dos botões */
-    height: auto; /* Altura automática para ajustar o conteúdo */
-    padding: 20px; /* Preenchimento aumentado para um melhor toque alvo */
+  .skills-table {
+    display: block;
+    overflow-x: auto;
   }
 }
