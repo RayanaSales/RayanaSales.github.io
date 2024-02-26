@@ -5,18 +5,18 @@ import ButtonWithGradientBorder from "./ButtonWithGradientBorder";
 
 const experiences = [
   {
-    title: "Full-Stack Developer",
-    company: "ThoughtWorks · Remote",
+    title: "Full-Stack Developer · Remote",
+    company: "ThoughtWorks",
     period: "Mar 2021 - Present (3 years)",
   },
   {
-    title: "Front-End Developer",
-    company: "Mesa · Remote",
+    title: "Front-End Developer · Remote",
+    company: "Mesa Mobile Thinking",
     period: "Sep 2020 - Mar 2021 (7 mos)",
   },
   {
-    title: "Full-Stack Developer",
-    company: "FAST · Remote",
+    title: "Full-Stack Developer · Remote",
+    company: "FAST Sol. Tecnológicas",
     period: "Feb 2018 - Aug 2020 (4 yrs)",
   },
 ];

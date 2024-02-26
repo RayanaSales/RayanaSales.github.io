@@ -94,9 +94,11 @@ h3 {
 
   .experiences h2 {
     font-size: 3rem;
+    margin-top: 40px;
   }
 
-  .experiences h3, .experiences h4 {
+  .experiences h3,
+  .experiences h4 {
     font-size: 1.5rem; /* Tamanho de fonte menor para sub-títulos em telas pequenas */
   }
 
