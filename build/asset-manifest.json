@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.c5efd465.css",
+    "main.css": "/static/css/main.9ceaaf87.css",
     "main.js": "/static/js/main.fe367bdd.js",
     "static/media/Rayana_Sales_PIC.jpeg": "/static/media/Rayana_Sales_PIC.036a37999c2e709aaee8.jpeg",
     "static/media/Rayana_Sales_CV.pdf": "/static/media/Rayana_Sales_CV.70818e4de07b640deaf4.pdf",
     "index.html": "/index.html",
-    "main.c5efd465.css.map": "/static/css/main.c5efd465.css.map",
+    "main.9ceaaf87.css.map": "/static/css/main.9ceaaf87.css.map",
     "main.fe367bdd.js.map": "/static/js/main.fe367bdd.js.map"
   },
   "entrypoints": [
-    "static/css/main.c5efd465.css",
+    "static/css/main.9ceaaf87.css",
     "static/js/main.fe367bdd.js"
   ]
 }
