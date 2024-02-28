@@ -61,11 +61,20 @@ h3 {
   color: #f8f8f2;
 }
 
+/* TopSkills.css - Ajustes para responsividade em dispositivos móveis */
+
 @media (max-width: 767px) {
+  /* Remove margens e paddings que podem restringir a largura da tabela */
+  .skills-container,
+  .skills-table-container,
+  .skills-table-content {
+    margin: 0;
+    max-width: none;
+  }
+
+  /* Ajusta o tamanho do container da tabela para ocupar toda a largura */
   .skills-container {
     width: 100%;
-    margin: unset;
-    max-width: unset;
     margin-top: 15px;
   }
 
@@ -74,8 +83,17 @@ h3 {
     margin-top: 30px;
   }
 
+  /* Remove estilos que limitam a largura da tabela */
   .skills-table {
-    display: block;
-    overflow-x: auto;
+    width: auto; /* Permite que a tabela se expanda conforme o conteúdo */
+    min-width: 100%; /* Garante que a tabela ocupe pelo menos 100% da largura */
+    display: table; /* Utiliza o comportamento padrão de tabela para preenchimento */
+  }
+
+  /* Garante que as células da tabela se ajustem ao novo layout */
+  .skills-table th,
+  .skills-table td {
+    box-sizing: border-box; /* Garante que o padding esteja incluso na largura definida */
+    width: auto; /* Permite que o conteúdo determine a largura */
   }
 }
